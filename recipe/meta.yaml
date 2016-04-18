@@ -34,5 +34,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - jakirkham
     - minrk
     - pelson
