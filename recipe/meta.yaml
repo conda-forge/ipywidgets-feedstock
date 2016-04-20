@@ -1,4 +1,4 @@
-{% set version = "4.1.1" %}
+{% set version = "5.0.0" %}
 
 package:
   name: ipywidgets
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: ipywidgets-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
-  md5: 491affdef8e0586eeeb299226ff634aa
+  url: https://github.com/ipython/ipywidgets/archive/v{{ version }}.tar.gz
+  sha256: 0eb192bc2b33a5ab1adfcf5dd120b876630149d6b930ea43b3ff68299a3f8d81
 
 build:
   number: 0
