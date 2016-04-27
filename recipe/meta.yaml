@@ -28,7 +28,7 @@ test:
     - ipywidgets
 
 about:
-  home: http://github.com/jakevdp/ipywidgets
+  home: https://github.com/ipython/ipywidgets
   license: BSD 3-clause
   summary: IPython Static Widgets
 
