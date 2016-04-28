@@ -1,4 +1,4 @@
-{% set version = "5.0.0" %}
+{% set version = "5.1.0" %}
 
 package:
   name: ipywidgets
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: ipywidgets-{{ version }}.tar.gz
-  url: https://github.com/ipython/ipywidgets/archive/v{{ version }}.tar.gz
-  sha256: 0eb192bc2b33a5ab1adfcf5dd120b876630149d6b930ea43b3ff68299a3f8d81
+  url: https://github.com/ipython/ipywidgets/archive/{{ version }}.tar.gz
+  sha256: db48ef063ad85d1731bd11aa737cd58cc6ebf1174c5fd2d29495ef25c82dc016
 
 build:
   number: 0
