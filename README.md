@@ -1,11 +1,11 @@
 About ipywidgets
 ================
 
-Home: http://github.com/jakevdp/ipywidgets
+Home: https://github.com/ipython/ipywidgets
 
 Package license: BSD 3-clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: IPython Static Widgets
 
