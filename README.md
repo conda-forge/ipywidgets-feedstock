@@ -7,7 +7,7 @@ Package license: BSD 3-clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: IPython Static Widgets
+Summary: Widgets for the Jupyter Notebook
 
 
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ipywidgets-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/ipywidgets-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/ipywidgets-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ipywidgets-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ipywidgets-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ipywidgets-feedstock/branch/master)
