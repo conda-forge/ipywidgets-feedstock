@@ -10,7 +10,7 @@ source:
   sha256: 88bc74564fe36c8f95c49bf83c43fbaf392dd92c9992bdb55f91af2b89ddffdc
 
 build:
-  number: 1
+  number: 2
   script: python -m pip install --no-deps .
 
 requirements:
@@ -19,10 +19,9 @@ requirements:
   run:
     - python
     - ipython >=4.0.0
-    - ipykernel
-    - traitlets
-    - notebook
-    - widgetsnbextension
+    - ipykernel >=4.2.2
+    - traitlets >=4.2.1
+    - widgetsnbextension >=1.2.2
 
 test:
   imports:
