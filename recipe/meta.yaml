@@ -1,4 +1,4 @@
-{% set version = "5.1.4" %}
+{% set version = "5.1.5" %}
 
 package:
   name: ipywidgets
@@ -6,11 +6,11 @@ package:
 
 source:
   fn: ipywidgets-{{ version }}.tar.gz
-  url: https://github.com/ipython/ipywidgets/archive/{{ version }}.tar.gz
-  sha256: 88bc74564fe36c8f95c49bf83c43fbaf392dd92c9992bdb55f91af2b89ddffdc
+  url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
+  md5: 7016f12e633d0f7c91d968eb8c8330d1
 
 build:
-  number: 2
+  number: 0
   script: python -m pip install --no-deps .
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - ipython >=4.0.0
     - ipykernel >=4.2.2
     - traitlets >=4.2.1
-    - widgetsnbextension >=1.2.2
+    - widgetsnbextension >=1.2.3
 
 test:
   imports:
