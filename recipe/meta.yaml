@@ -10,7 +10,7 @@ source:
   md5: 317e49cc76353352939c2527920f3ebe
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps .
 
 requirements:
@@ -30,6 +30,7 @@ test:
 about:
   home: https://github.com/ipython/ipywidgets
   license: BSD 3-clause
+  license_file: COPYING.md
   summary: Widgets for the Jupyter Notebook
 
 extra:
