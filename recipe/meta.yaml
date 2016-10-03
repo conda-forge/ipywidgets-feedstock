@@ -10,12 +10,13 @@ source:
   md5: 317e49cc76353352939c2527920f3ebe
 
 build:
-  number: 1
+  number: 2
   script: python -m pip install --no-deps .
 
 requirements:
   build:
     - python
+    - pip
   run:
     - python
     - ipython >=4.0.0
