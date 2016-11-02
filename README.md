@@ -14,24 +14,23 @@ Summary: Widgets for the Jupyter Notebook
 Installing ipywidgets
 =====================
 
-Installing `ipywidgets` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing ipywidgets from the conda-forge channel can be achieved by adding conda-forge to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `ipywidgets` can be installed with:
+Once the conda-forge channel has been enabled, ipywidgets can be installed with:
 
 ```
 conda install ipywidgets
 ```
 
-It is possible to list all of the versions of `ipywidgets` available on your platform with:
+It is possible to list all of the versions of ipywidgets available on your platform with:
 
 ```
 conda search ipywidgets --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -52,8 +51,8 @@ packages to the [conda-forge](https://anaconda.org/conda-forge)
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](http://github.com/conda-forge/conda-smithy) has been developed.
-Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
-this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
+Using the ``conda-forge.yml`` within this repository, it is possible to regenerate all of
+this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy regenerate``.
 
 
 Terminology
