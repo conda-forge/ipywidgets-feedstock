@@ -1,7 +1,3 @@
-checkout:
-  post:
-    - ./ci_support/checkout_merge_commit.sh
-
 machine:
   services:
     - docker
