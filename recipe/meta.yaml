@@ -23,7 +23,7 @@ requirements:
     - ipython >=4.0.0
     - ipykernel >=4.5.1
     - traitlets >=4.3.1
-    - nbformat >= 4.2.0
+    - nbformat >=4.2.0
     - widgetsnbextension >=3.0.0
 
 test:
