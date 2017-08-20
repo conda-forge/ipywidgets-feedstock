@@ -1,5 +1,5 @@
-{% set version = "6.0.0" %}
-{% set sha256 = "afa6248850cff14ef86117db87aeab0b12237e4eaf740e73716460ed593a43a7" %}
+{% set version = "7.0.0" %}
+{% set sha256 = "63e454202f72796044e99846881c33767c47fa050735dc1f927657b9cd2b7fcd" %}
 
 package:
   name: ipywidgets
@@ -23,7 +23,8 @@ requirements:
     - ipython >=4.0.0
     - ipykernel >=4.5.1
     - traitlets >=4.3.1
-    - widgetsnbextension >=2.0.0
+    - nbformat >=4.2.0
+    - widgetsnbextension >=3.0.0
 
 test:
   imports:
@@ -43,3 +44,4 @@ extra:
     - SylvainCorlay
     - willingc
     - jasongrout
+    - maartenbreddels
