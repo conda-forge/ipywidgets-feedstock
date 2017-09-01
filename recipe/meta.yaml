@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps .
 
 requirements:
@@ -22,8 +22,8 @@ requirements:
     - python
     - ipython >=4.0.0
     - ipykernel >=4.5.1
-    - traitlets >=4.3.1
-    - widgetsnbextension >=2.0.0
+    - traitlets >=4.3.1,<5.0.0
+    - widgetsnbextension >=2.0.0,<3.0.0
 
 test:
   imports:
