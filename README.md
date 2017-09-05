@@ -7,7 +7,7 @@ Package license: BSD 3-clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Widgets for the Jupyter Notebook
+Summary: Jupyter Interactive Widgets
 
 
 
