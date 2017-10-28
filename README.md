@@ -14,7 +14,9 @@ Summary: Jupyter Interactive Widgets
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/ipywidgets-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ipywidgets-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ipywidgets-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ipywidgets-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/ipywidgets-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ipywidgets-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ipywidgets-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ipywidgets-feedstock/branch/master)
 
 Current release info
 ====================
