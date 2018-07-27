@@ -1,5 +1,5 @@
-{% set version = "7.3.0" %}
-{% set sha256 = "3ce93db970a94f06f38121da70757cdbcce884ecd14f79a4dd9bc49a47e0f33b" %}
+{% set version = "7.3.1" %}
+{% set sha256 = "23ad9fdbaca5aa0876a2a4d07f19c71b6253821fb6284018edd8e7fb34a37806" %}
 
 package:
   name: ipywidgets
@@ -10,6 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
   script: python -m pip install --no-deps .
 
