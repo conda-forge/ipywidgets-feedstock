@@ -15,7 +15,7 @@ build:
   script: python -m pip install --no-deps .
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
@@ -34,7 +34,12 @@ about:
   home: https://github.com/ipython/ipywidgets
   license: BSD 3-clause
   license_file: LICENSE
+  license_family: BSD
   summary: Jupyter Interactive Widgets
+  description: |
+    ipywidgets are interactive HTML widgets for Jupyter notebooks and the IPython kernel.
+  doc_url: https://ipywidgets.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/index.rst
 
 extra:
   recipe-maintainers:
