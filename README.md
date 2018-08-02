@@ -9,6 +9,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: Jupyter Interactive Widgets
 
+ipywidgets are interactive HTML widgets for Jupyter notebooks and the IPython kernel.
 
 
 Current build status
