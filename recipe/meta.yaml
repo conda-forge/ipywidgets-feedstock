@@ -1,5 +1,5 @@
-{% set version = "7.5.1" %}
-{% set sha256 = "e945f6e02854a74994c596d9db83444a1850c01648f1574adf144fbbabe05c97" %}
+{% set version = "8.0.0a0" %}
+{% set sha256 = "87b30e4dfd68a7c4e3c6462eedb95ac7d1a776cc182f87168d960151151de31c" %}
 
 package:
   name: ipywidgets
@@ -12,19 +12,19 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps .
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
     - ipython >=4.0.0
     - ipykernel >=4.5.1
     - traitlets >=4.3.1,<5.0.0
     - nbformat >=4.2.0
-    - widgetsnbextension >=3.5.0,<3.6.0
+    - widgetsnbextension >=4.0.0a0,<5.0.0
 
 test:
   imports:
