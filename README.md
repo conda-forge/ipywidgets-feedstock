@@ -3,11 +3,13 @@ About ipywidgets
 
 Home: https://github.com/ipython/ipywidgets
 
-Package license: BSD-3-clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipywidgets-feedstock/blob/master/LICENSE.txt)
 
 Summary: Jupyter Interactive Widgets
+
+Documentation: https://ipywidgets.readthedocs.io/en/latest/
 
 ipywidgets are interactive HTML widgets for Jupyter notebooks and the IPython kernel.
 
@@ -120,6 +122,7 @@ Feedstock Maintainers
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@jasongrout](https://github.com/jasongrout/)
+* [@jtpio](https://github.com/jtpio/)
 * [@maartenbreddels](https://github.com/maartenbreddels/)
 * [@minrk](https://github.com/minrk/)
 * [@pbugnion](https://github.com/pbugnion/)
