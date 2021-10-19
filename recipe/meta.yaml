@@ -1,5 +1,5 @@
-{% set version = "8.0.0a0" %}
-{% set sha256 = "87b30e4dfd68a7c4e3c6462eedb95ac7d1a776cc182f87168d960151151de31c" %}
+{% set version = "8.0.0a6" %}
+{% set sha256 = "92bd3a342a04d9e782995275495946af84053700dd6bb57d63f1c0c7fe3dc9fe" %}
 
 package:
   name: ipywidgets
@@ -16,15 +16,19 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    # TODO Include 3.10 for the actual 8.0 release
+    - python >=3.6,<3.10
     - pip
   run:
-    - python >=3.5
+    # TODO Include 3.10 for the actual 8.0 release
+    - python >=3.6,<3.10
     - ipython >=4.0.0
     - ipykernel >=4.5.1
-    - traitlets >=4.3.1,<5.0.0
+    - traitlets >=4.3.1
     - nbformat >=4.2.0
     - widgetsnbextension >=4.0.0a0,<5.0.0
+    - jupyterlab_widgets >=2.0.0a3,<3.0.0
+    - ipython_genutils >=0.2.0,<0.3.0
 
 test:
   imports:
@@ -51,3 +55,4 @@ extra:
     - jasongrout
     - maartenbreddels
     - pbugnion
+    - martinRenou

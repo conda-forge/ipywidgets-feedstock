@@ -1,6 +1,0 @@
-channel_sources:
-- conda-forge/label/widgetsnbextension_dev,conda-forge,defaults
-channel_targets:
-- conda-forge ipywidgets_dev
-docker_image:
-- condaforge/linux-anvil-comp7

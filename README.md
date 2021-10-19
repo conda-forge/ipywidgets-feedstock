@@ -5,9 +5,11 @@ Home: https://github.com/ipython/ipywidgets
 
 Package license: BSD 3-clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipywidgets-feedstock/blob/master/LICENSE.txt)
 
 Summary: Jupyter Interactive Widgets
+
+Documentation: https://ipywidgets.readthedocs.io/en/latest/
 
 ipywidgets are interactive HTML widgets for Jupyter notebooks and the IPython kernel.
 
@@ -39,6 +41,7 @@ Installing `ipywidgets` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `ipywidgets` can be installed with:
@@ -109,9 +112,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
@@ -121,6 +124,7 @@ Feedstock Maintainers
 * [@jakirkham](https://github.com/jakirkham/)
 * [@jasongrout](https://github.com/jasongrout/)
 * [@maartenbreddels](https://github.com/maartenbreddels/)
+* [@martinRenou](https://github.com/martinRenou/)
 * [@minrk](https://github.com/minrk/)
 * [@pbugnion](https://github.com/pbugnion/)
 * [@pelson](https://github.com/pelson/)
