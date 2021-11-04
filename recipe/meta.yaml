@@ -11,17 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    # TODO Include 3.10 for the actual 8.0 release
-    - python >=3.6,<3.10
+    - python >=3.6
     - pip
   run:
-    # TODO Include 3.10 for the actual 8.0 release
-    - python >=3.6,<3.10
+    - python >=3.6
     - ipython >=4.0.0
     - ipykernel >=4.5.1
     - traitlets >=4.3.1
