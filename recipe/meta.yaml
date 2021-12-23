@@ -1,5 +1,5 @@
-{% set version = "8.0.0a6" %}
-{% set sha256 = "92bd3a342a04d9e782995275495946af84053700dd6bb57d63f1c0c7fe3dc9fe" %}
+{% set version = "8.0.0b1" %}
+{% set sha256 = "206be4921d203461e65a3bdb0d1762aa07f26c743fe00062e73708cf7c8ce4b7" %}
 
 package:
   name: ipywidgets
@@ -11,21 +11,21 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - ipython >=4.0.0
     - ipykernel >=4.5.1
     - traitlets >=4.3.1
     - nbformat >=4.2.0
-    - widgetsnbextension >=4.0.0a0,<5.0.0
-    - jupyterlab_widgets >=2.0.0a3,<3.0.0
+    - widgetsnbextension >=4.0.0b1,<5.0.0
+    - jupyterlab_widgets >=2.0.0b1,<3.0.0
     - ipython_genutils >=0.2.0,<0.3.0
 
 test:
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/ipython/ipywidgets
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
   summary: Jupyter Interactive Widgets
