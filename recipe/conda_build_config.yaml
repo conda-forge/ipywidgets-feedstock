@@ -1,5 +1,5 @@
 channel_sources:
-  - conda-forge/label/widgetsnbextension_dev,conda-forge/label/jupyterlab_widgets_rc,conda-forge,defaults
+  - conda-forge/label/widgetsnbextension_dev,conda-forge/label/jupyterlab_widgets_dev,conda-forge,defaults
 
 channel_targets:
   - conda-forge ipywidgets_dev
