@@ -1,5 +1,5 @@
-{% set version = "8.0.0b1" %}
-{% set sha256 = "206be4921d203461e65a3bdb0d1762aa07f26c743fe00062e73708cf7c8ce4b7" %}
+{% set version = "8.0.0rc0" %}
+{% set sha256 = "9bc4440b6d669aa946075d10360ded2a76dbcf462f5212b9310e9b189ed84574" %}
 
 package:
   name: ipywidgets
@@ -11,8 +11,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -24,8 +24,8 @@ requirements:
     - ipykernel >=4.5.1
     - traitlets >=4.3.1
     - nbformat >=4.2.0
-    - widgetsnbextension >=4.0.0b1,<5.0.0
-    - jupyterlab_widgets >=2.0.0b1,<3.0.0
+    - widgetsnbextension >=4.0.0rc0,<5.0.0
+    - jupyterlab_widgets >=3.0.0rc0,<4.0.0
     - ipython_genutils >=0.2.0,<0.3.0
 
 test:

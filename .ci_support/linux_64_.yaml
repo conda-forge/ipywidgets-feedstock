@@ -1,8 +1,8 @@
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge/label/widgetsnbextension_dev,conda-forge/label/jupyterlab_widgets_dev,conda-forge,defaults
+- conda-forge/label/widgetsnbextension_rc,conda-forge/label/jupyterlab_widgets_rc,conda-forge,defaults
 channel_targets:
-- conda-forge ipywidgets_dev
+- conda-forge ipywidgets_rc
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
