@@ -149,6 +149,7 @@ Feedstock Maintainers
 =====================
 
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@jasongrout](https://github.com/jasongrout/)
 * [@jtpio](https://github.com/jtpio/)
@@ -157,5 +158,6 @@ Feedstock Maintainers
 * [@minrk](https://github.com/minrk/)
 * [@pbugnion](https://github.com/pbugnion/)
 * [@pelson](https://github.com/pelson/)
+* [@vidartf](https://github.com/vidartf/)
 * [@willingc](https://github.com/willingc/)
 
