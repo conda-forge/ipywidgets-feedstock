@@ -1,5 +1,4 @@
-{% set version = "8.0.2" %}
-{% set sha256 = "08cb75c6e0a96836147cbfdc55580ae04d13e05d26ffbc377b4e1c68baa28b1f" %}
+{% set version = "8.0.3" %}
 
 package:
   name: ipywidgets
@@ -7,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 2ec50df8538a1d4ddd5d454830d010922ad1015e81ac23efb27c0908bbc1eece
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -19,17 +18,24 @@ requirements:
     - python >=3.7
     - pip
   run:
-    - python >=3.7
-    - ipython >=4.0.0
     - ipykernel >=4.5.1
-    - traitlets >=4.3.1
+    - ipython >=6.1.0
+    - jupyterlab_widgets >=3.0.4,<4.0.0
     - nbformat >=4.2.0
-    - widgetsnbextension >=4.0.0,<5.0.0
-    - jupyterlab_widgets >=3.0.0,<4.0.0
-
+    - python >=3.7
+    - traitlets >=4.3.1
+    - widgetsnbextension >=4.0.4,<5.0.0
 test:
+  requires:
+    - jsonschema
+    - pip
+    - pytest-cov
+    - pytz
   imports:
     - ipywidgets
+  commands:
+    - pip check
+    - pytest -vv --pyargs ipywidgets --cov=ipywidgets --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=93
 
 about:
   home: https://github.com/ipython/ipywidgets
@@ -55,3 +61,4 @@ extra:
     - jtpio
     - martinRenou
     - vidartf
+    - bollwyvl
