@@ -157,5 +157,6 @@ Feedstock Maintainers
 * [@minrk](https://github.com/minrk/)
 * [@pbugnion](https://github.com/pbugnion/)
 * [@pelson](https://github.com/pelson/)
+* [@vidartf](https://github.com/vidartf/)
 * [@willingc](https://github.com/willingc/)
 
