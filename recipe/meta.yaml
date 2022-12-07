@@ -1,5 +1,5 @@
-{% set version = "8.0.2" %}
-{% set sha256 = "08cb75c6e0a96836147cbfdc55580ae04d13e05d26ffbc377b4e1c68baa28b1f" %}
+{% set version = "8.0.3" %}
+{% set sha256 = "2ec50df8538a1d4ddd5d454830d010922ad1015e81ac23efb27c0908bbc1eece" %}
 
 package:
   name: ipywidgets
@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
