@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipywidgets-feed
 
 Summary: Jupyter Interactive Widgets
 
-Documentation: https://ipywidgets.readthedocs.io/en/latest/
+Documentation: https://ipywidgets.readthedocs.io
 
 ipywidgets are interactive HTML widgets for Jupyter notebooks and the IPython kernel.
 
@@ -149,12 +149,15 @@ Feedstock Maintainers
 =====================
 
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@jasongrout](https://github.com/jasongrout/)
 * [@jtpio](https://github.com/jtpio/)
 * [@maartenbreddels](https://github.com/maartenbreddels/)
+* [@martinRenou](https://github.com/martinRenou/)
 * [@minrk](https://github.com/minrk/)
 * [@pbugnion](https://github.com/pbugnion/)
 * [@pelson](https://github.com/pelson/)
+* [@vidartf](https://github.com/vidartf/)
 * [@willingc](https://github.com/willingc/)
 
