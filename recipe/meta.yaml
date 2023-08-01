@@ -1,4 +1,4 @@
-{% set version = "8.0.7" %}
+{% set version = "8.1.0" %}
 
 package:
   name: ipywidgets
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
-  sha256: 50ace0a8886e9a0d68b980db82f94c25d55d21ff2340ed36f802dd9365e94acf
+  sha256: ce97dd90525b3066fd00094690964e7eac14cf9b7745d35565b5eeac20cce687
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - setuptools >=40.8.0
     - wheel
   run:
-    - ipykernel >=4.5.1
+    - comm >=0.1.3
     - ipython >=6.1.0
     - jupyterlab_widgets >=3.0.7,<3.1.0
     - python >=3.7
@@ -32,6 +32,7 @@ test:
     - pip
     - pytest-cov
     - pytz
+    - ipykernel
   imports:
     - ipywidgets
   commands:
