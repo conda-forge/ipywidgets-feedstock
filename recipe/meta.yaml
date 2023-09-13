@@ -1,4 +1,4 @@
-{% set version = "8.1.0" %}
+{% set version = "8.1.1" %}
 
 package:
   name: ipywidgets
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
-  sha256: ce97dd90525b3066fd00094690964e7eac14cf9b7745d35565b5eeac20cce687
+  sha256: 40211efb556adec6fa450ccc2a77d59ca44a060f4f9f136833df59c9f538e6e8
 
 build:
   noarch: python
