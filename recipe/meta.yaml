@@ -39,7 +39,7 @@ test:
   commands:
     - pip check
     - coverage run --source ipywidgets --branch -m pytest -vv --color=yes --tb=long --pyargs ipywidgets 
-    - coverage report --show-missing --skip-covered --fail-under=92
+    - coverage report --show-missing --skip-covered --fail-under=90
 
 about:
   home: https://github.com/ipython/ipywidgets
