@@ -1,4 +1,4 @@
-{% set version = "8.1.1" %}
+{% set version = "8.1.2" %}
 
 package:
   name: ipywidgets
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
-  sha256: 40211efb556adec6fa450ccc2a77d59ca44a060f4f9f136833df59c9f538e6e8
+  sha256: d0b9b41e49bae926a866e613a39b0f0097745d2b9f1f3dd406641b4a57ec42c9
 
 build:
   noarch: python
@@ -22,22 +22,24 @@ requirements:
   run:
     - comm >=0.1.3
     - ipython >=6.1.0
-    - jupyterlab_widgets >=3.0.9,<3.1.0
+    - jupyterlab_widgets >=3.0.10,<3.1.0
     - python >=3.7
     - traitlets >=4.3.1
-    - widgetsnbextension >=4.0.9,<4.1.0
+    - widgetsnbextension >=4.0.10,<4.1.0
 test:
   requires:
+    - coverage
+    - ipykernel
     - jsonschema
     - pip
-    - pytest-cov
+    - pytest <8
     - pytz
-    - ipykernel
   imports:
     - ipywidgets
   commands:
     - pip check
-    - pytest -vv --pyargs ipywidgets --cov=ipywidgets --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=92
+    - coverage run --source ipywidgets --branch -m pytest -vv --color=yes --tb=long --pyargs ipywidgets 
+    - coverage report --show-missing --skip-covered --fail-under=90
 
 about:
   home: https://github.com/ipython/ipywidgets
