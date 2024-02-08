@@ -28,16 +28,18 @@ requirements:
     - widgetsnbextension >=4.0.10,<4.1.0
 test:
   requires:
+    - coverage
+    - ipykernel
     - jsonschema
     - pip
-    - pytest-cov
+    - pytest <8
     - pytz
-    - ipykernel
   imports:
     - ipywidgets
   commands:
     - pip check
-    - pytest -vv --pyargs ipywidgets --cov=ipywidgets --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=92
+    - coverage run --source ipywidgets --branch -m pytest -vv --color=yes --tb=long --pyargs ipywidgets 
+    - coverage report --show-missing --skip-covered --cov-fail-under=92
 
 about:
   home: https://github.com/ipython/ipywidgets
