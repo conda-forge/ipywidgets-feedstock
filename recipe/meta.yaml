@@ -1,4 +1,4 @@
-{% set version = "7.8.0" %}
+{% set version = "7.8.2" %}
 
 package:
   name: ipywidgets
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
-  sha256: 6412eb61d1ccde049f731084266b3c946117b3e8c2769923fc20ea35633ef77c
+  sha256: 282a550abab40831e08e1aab0b04aaf5c01494ff919faa44d3ac624f4cbc8fd0
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - jupyterlab_widgets >=1.0.0,<3
     - python >=3.3
     - traitlets >=4.3.1
-    - widgetsnbextension >=3.6.4,<3.7.0
+    - widgetsnbextension >=3.6.7,<3.7.0
 
 test:
   requires:
