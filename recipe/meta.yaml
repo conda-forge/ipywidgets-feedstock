@@ -24,7 +24,7 @@ requirements:
     - jupyterlab_widgets >=1.0.0,<3
     - python >=3.3
     - traitlets >=4.3.1
-    - widgetsnbextension >=3.6.7,<3.7.0
+    - widgetsnbextension >=3.6.8,<3.7.0
 
 test:
   requires:
