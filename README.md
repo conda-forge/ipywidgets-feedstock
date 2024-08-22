@@ -161,6 +161,3 @@ Feedstock Maintainers
 * [@vidartf](https://github.com/vidartf/)
 * [@willingc](https://github.com/willingc/)
 
-
-<!-- dummy commit to enable rerendering -->
-
