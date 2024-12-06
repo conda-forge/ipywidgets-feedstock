@@ -5,25 +5,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/i/ipywidgets/ipywidgets-{{ version }}.tar.gz
   sha256: 870e43b1a35656a80c18c9503bbf2d16802db1cb487eec6fab27d683381dde17
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=40.8.0
     - wheel
   run:
     - comm >=0.1.3
     - ipython >=6.1.0
     - jupyterlab_widgets >=3.0.13,<3.1.0
-    - python >=3.7
+    - python >={{ python_min }}
     - traitlets >=4.3.1
     - widgetsnbextension >=4.0.13,<4.1.0
 test:
@@ -34,6 +34,7 @@ test:
     - pip
     - pytest <8
     - pytz
+    - python {{ python_min }}
   imports:
     - ipywidgets
   commands:
